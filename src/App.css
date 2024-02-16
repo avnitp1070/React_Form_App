@@ -1,38 +1,75 @@
 .App {
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 400px;
+}
+
+form {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  width: 600px;
+}
+
+h1 {
+  margin-bottom: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+label {
+  display: block;
+  margin-bottom: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input[type='text'],
+input[type='email'],
+textarea,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+input[type='checkbox'],
+input[type='radio'] {
+  margin-right: 5px;
+}
+
+button {
+  background-color: #45a049;
   color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color:#14086b;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+fieldset {
+  margin-bottom: 15px;
+}
+
+legend {
+  font-weight: bold;
+}
+
+select {
+  width: 100%;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .App {
+    max-width: 100%;
   }
 }
+
+
